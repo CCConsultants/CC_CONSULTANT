@@ -15,7 +15,7 @@ import { useTranslation } from 'react-i18next';
 function App() {
   const { t } = useTranslation();
   return (
-    <Router>
+    <Router basename="/CC_CONSULTANT">
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-grow">

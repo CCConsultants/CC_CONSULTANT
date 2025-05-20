@@ -16,7 +16,7 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.send(
-      'service_bo1q4dv',
+      'service_fg7p5pu',
       'template_o20jimh',
       {
         email: formData.email,
@@ -67,7 +67,7 @@ const Contact = () => {
             <div className="mt-4 text-center">
               <h3 className="text-lg font-medium text-gray-900">{t('contact_email')}</h3>
               <p className="mt-2 text-base text-gray-500">
-                cc_consultants@gmail.com
+                cedrik.campeau@ccconsultant.ca
               </p>
             </div>
           </div>
@@ -89,9 +89,9 @@ const Contact = () => {
               <MapPin className="h-6 w-6 text-indigo-600" />
             </div>
             <div className="mt-4 text-center">
-              <h3 className="text-lg font-medium text-gray-900">{t('contact_location')}</h3>
+              <h3 className="text-lg font-medium text-gray-900">{t('location')}</h3>
               <p className="mt-2 text-base text-gray-500">
-                Remote but from Gatineau, QC
+                Remote but from Ottawa/Gatineau Region
               </p>
             </div>
           </div>
@@ -101,7 +101,6 @@ const Contact = () => {
           <div className="relative bg-white shadow-xl rounded-lg">
             <div className="p-8">
               <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-y-6">
-                {/* Champ "name" supprimé */}
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                     {t('contact_form_email')}
@@ -131,13 +130,13 @@ const Contact = () => {
                       onChange={handleChange}
                       className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                     >
-                      <option value="" disabled>{t('contact_form_subject_placeholder')}</option>
+                      <option value="" disabled>{t('contact_form_select_project')}</option>
                       <option value="Custom Software Development">{t('contact_form_subject_option1')}</option>
-                      <option value="Data Analytics & Visualization">{t('contact_form_subject_option2')}</option>
-                      <option value="Machine Learning Solutions">{t('contact_form_subject_option3')}</option>
-                      <option value="Technical Consulting">{t('contact_form_subject_option4')}</option>
-                      <option value="Process Chain Optimization">{t('contact_form_subject_option5')}</option>
-                      <option value="Workflow Optimization">{t('contact_form_subject_option6')}</option>
+                      <option value="Data Analytics & BI">{t('contact_form_subject_option2')}</option>
+                      <option value="Machine Learning & AI">{t('contact_form_subject_option3')}</option>
+                      <option value="Business Intelligence">{t('contact_form_subject_option4')}</option>
+                      <option value="Process Automation">{t('contact_form_subject_option5')}</option>
+                      <option value="Cloud Solutions">{t('contact_form_subject_option6')}</option>
                       <option value="Other">{t('contact_form_subject_option7')}</option>
                     </select>
                   </div>

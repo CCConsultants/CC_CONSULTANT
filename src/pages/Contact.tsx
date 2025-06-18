@@ -16,14 +16,14 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.send(
-      'service_fg7p5pu',
-      'template_o20jimh',
+      'service_icpklt8',
+      'template_qv03ht8',
       {
         email: formData.email,
         subject: formData.subject,
         message: formData.message,
       },
-      'R0eJtPxaSs_64nMpn'
+      'fUelVTAOfTcOds-rc'
     )
     .then((response) => {
       console.log('SUCCESS!', response.status, response.text);
@@ -67,7 +67,7 @@ const Contact = () => {
             <div className="mt-4 text-center">
               <h3 className="text-lg font-medium text-gray-900">{t('contact_email')}</h3>
               <p className="mt-2 text-base text-gray-500">
-                cedrik.campeau@ccconsultant.ca
+                support@blueseaanalytics.ca
               </p>
             </div>
           </div>
